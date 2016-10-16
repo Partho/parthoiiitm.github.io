@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Flight Statistics</title>
+  <link rel="stylesheet" href="./static/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Arimo|Quicksand" rel="stylesheet" type='text/css'>
+</head>
+
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+    <div class="container-fluid">
+      <div class="navbar-header" >
+        <a class="navbar-brand" href="./">Statistics of flights cancelled in Jan 2008</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-7">
+        <div class="row">
+
+        <div class="col-sm-12">
+            <div class="chart-wrapper">
+            <div class="chart-title">
+            <b>Cancellations during period</b>
+          </div>
+              <div class="chart-stage">
+                    <div id="time-chart"></div>    
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                <b>Flight Map</b>
+              </div>
+              <div class="chart-stage">
+                  <div id='map' ></div>
+                    
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+     <div class="col-sm-5">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <b>Cancellation Reasons</b>
+          </div>
+          <div class="chart-stage">
+            
+            <div id="cancel-row-chart"> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-5 col-sm-5">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <b>Top 10 origin cities where flights got cancelled</b>
+          </div>
+          <div class="chart-stage">
+            <div id="origin-place-row-chart"> </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-5 col-sm-5">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <b>Total cancellations </b>
+          </div>
+          <div class="chart-stage">
+            <div id="number-records-nd"> </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+
+    <hr>
+
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/underscore-min.js"></script>
+  <script src="./static/lib/js/holder.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.v3.js"></script>
+  <script src="./static/lib/js//topojson.v1.min.js"></script>
+  <script src="./static/lib/js/datamaps.usa.min.js"></script>
+  <script src="./static/lib/js/dc.min.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+  <!-- Udacity Project 6 js file -->
+  <script src="./static/js/main.js"></script>
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src="./static/lib/js/meta.js"></script>
+  <script>Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });</script>
+
+
+</body>
+</html>
