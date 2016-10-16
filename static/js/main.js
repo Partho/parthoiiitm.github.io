@@ -117,7 +117,7 @@ function makeGraphs(error, recordsJson) {
 	var map = drawMap();
 
 	var geoData = [];
-	_.each(allDim.top(Infinity), function (d) {  
+	_.each(allDim.top(500), function (d) {  
 		var col;
 		if(d.CancellationCode === 'Weather'){
         	col = '#0571B0'
@@ -159,7 +159,7 @@ function makeGraphs(error, recordsJson) {
 
             map = drawMap();
 			geo_Data = [];
-			  _.each(allDim.top(Infinity), function (d) { 
+			  _.each(allDim.top(500), function (d) { 
 
 			  	var col;
 				if(d.CancellationCode === 'Weather'){
